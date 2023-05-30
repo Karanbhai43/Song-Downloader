@@ -20,15 +20,15 @@ from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid
 
 Bot = Client(
     "Song Downloader Bot",
-    bot_token = os.environ["BOT_TOKEN"],
-    api_id = int(os.environ["API_ID"]),
-    api_hash = os.environ["API_HASH"]
+    bot_token = os.environ["6097653064:AAH28jpkxX5RYL0u8TmTxXbZGto1cAhBCPo"],
+    api_id = int(os.environ["26679922"]),
+    api_hash = os.environ["384234b8619cea52c3b6062f15398021"]
 )
 
 db = Database()
 
 START_TEXT = """ `Hai {}, 
-Am a YouTube Downloader Bot I Can Download Songs,Videos and Lyrics From YouTube and lyrics and  Would upload into Telegram. 
+Am a YouTube Downloader Bot Made By @got_network I Can Download Songs,Videos and Lyrics From YouTube and lyrics and  Would upload into Telegram. 
 Use /help Commands For More.`
 """
 
@@ -187,7 +187,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@mwkBoTs]" 
+            performer = f"[@got_network]" 
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
